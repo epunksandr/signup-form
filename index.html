@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sing-up Form</title>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="image-section">
+            <div class="image-box">
+                <img src="images/odin-lined.png" alt="odin logo">
+            </div>
+            <p>Foto von <a
+                    href="https://unsplash.com/de/@reidzura?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Reid
+                    Zura</a> auf <a
+                    href="https://unsplash.com/de/fotos/rote-backsteinmauer-iYgiHI36Xv8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+        </div>
+        <div class="form-container">
+            <div class="content">
+                <h3 class="heading">This is not a real online service! You know you need something like this in your
+                    life to help you
+                    realize your deepest dreams. <br>Sign up <em>now</em> to get started.<br><br>You <em>know</em> you
+                    want to.</h3>
+                <form action="" method="post">
+                    <fieldset>
+                        <h3>Let's do this!</h3>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-control">
+                                    <label for="first_name">first name</label>
+                                    <input type="text" name="first_name" id="first_name" required>
+                                </div>
+                                <div class="form-control">
+                                    <label for="email">email</label>
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+                                <div class="form-control">
+                                    <label for="password">password</label>
+                                    <input type="password" name="password" minlength="8" id="password" required>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-control">
+                                    <label for="last_name">last name</label>
+                                    <input type="text" name="last_name" id="last_name" required>
+                                </div>
+                                <div class="form-control">
+                                    <label for="phone_number">phone number</label>
+                                    <input type="text" name="phone_number" id="phone_number" required>
+                                </div>
+                                <div class="form-control">
+                                    <label for="confirmed_password">confirm password</label>
+                                    <input type="password" name="confirmed_password" id="confirmed_password" required>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="buttons-box">
+                        <button>Create Account</button>
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

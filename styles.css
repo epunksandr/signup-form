@@ -1,0 +1,168 @@
+/* Oswald font */
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/oswald-v56-latin-regular.woff2') format('woff2');
+}
+
+/* Variables for colors */
+:root {
+    --primary-color: #5d5d5d;
+    --primary-hover: #454545;
+    --accent-color: #dc362a;
+    --input-border: #E5E7EB;
+    --input-focus: #0d8fe6;
+    --error: #eb1c1c;
+    --shadow-color: rgba(0, 0, 0, 0.12);
+    --bg-light: #ebebeb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background: url("images/reid-zura-iYgiHI36Xv8-unsplash.webp") no-repeat center center / cover;
+}
+
+.image-box {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-box img {
+    width: 100px;
+}
+
+.image-section p {
+    align-self: center;
+    color: white;
+    text-shadow: 0 0 10px #000;
+    margin-bottom: 15px;
+}
+
+.image-section p a {
+    color: white;
+}
+
+.image-section p a:visited {
+    color: rgb(208, 208, 208);
+}
+
+.form-container {
+    flex: 2;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-light);
+    box-shadow: -1px 0 49px 10px rgba(0, 0, 0, 0.4);
+}
+
+.content {
+    width: 100%;
+}
+
+.heading {
+    padding: 0 3rem;
+    font-size: 1.5em;
+    width: 75%;
+    margin-bottom: 3rem;
+}
+
+form fieldset {
+    padding: 1.5rem 3rem;
+    background-color: white;
+    border: none;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 6px 15px var(--shadow-color);
+}
+
+form fieldset h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+form .row {
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 1.8rem;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.625rem;
+}
+
+.form-control label {
+    font-size: 0.75rem;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.form-control input {
+    border: 1px solid var(--input-border);
+    padding: 0.4rem 0.5rem;
+}
+
+.form-control input:focus {
+    border: 1px solid var(--input-focus);
+    outline: none;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+input[type="password"]:invalid {
+    border: 1px solid var(--error);
+}
+
+.buttons-box {
+    padding: 0 3rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-family: 'Oswald';
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+.buttons-box a {
+    color: var(--accent-color);
+}
